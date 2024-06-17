@@ -37,6 +37,41 @@ namespace InterfaceExercise
 
             //Now, create objects of your 3 classes and give their members values.
             //Creatively display and organize their values
+            Car car = new Car();
+            car.EngineType = "V4";
+            car.Make = "Toyota";
+            car.Model = "Corolla";
+            car.Year = 2001;
+            car.Logo = "Toyota Logo";
+            car.IsDomestic = false;
+            car.HasTrunk = true;
+            car.IsSportsCar = false;
+
+            car.DisplayDetails();
+
+            Truck truck = new Truck();
+            truck.EngineType = "V8";
+            truck.Make = "Ford";
+            truck.Model = "F-150";
+            truck.Year = 2021;
+            truck.Logo = "Ford Logo";
+            truck.IsDomestic = true;
+            truck.HasExtendedCab = true;
+            truck.HasExtendedBed = true;
+
+            truck.DisplayDetails();
+
+            SUV suv = new SUV();
+            suv.EngineType = "V6";
+            suv.Make = "Jeep";
+            suv.Model = "Cherokee";
+            suv.Year = 2015;
+            suv.Logo = "Jeep Logo";
+            suv.IsDomestic= true;
+            suv.NumberOfWheelDrive = 4;
+            suv.CanOffRoad = true;
+
+            suv.DisplayDetails();
             
             //Option for displaying values: 
             //Create a stubbed out method called DisplayDetails in your IVehicle interface.
